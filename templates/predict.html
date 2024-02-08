@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="http://localhost:5000/feedback">
+            <h3> Polarity Check </h3>
+            <table>
+                <tr>
+                    <td> Given sentence is rated as </td>
+                    <td> {{result.neg}}% negative </td>
+                </tr>
+                <tr>
+                    <td> Given sentence is rated as </td>
+                    <td> {{result.pos}}% positive </td>
+                </tr>
+                <tr>
+                    <td> Given sentence is rated as </td>
+                    <td> {{result.neu}}% neutral </td>
+                </tr>
+                <tr>
+                    <td> Sentence overall rated as </td>
+                    <td> {{result.result}} </td>
+                </tr>
+            </table>
+            <input type="submit" value="Go Back">
+        </form>
+    </body>
+</html>
